@@ -1,11 +1,16 @@
 <?php
 
-namespace App/Controllers;
+namespace App\Controllers;
 
 class ComputersController
 {
-	function index()
+	public function index()
 	{
-		
+		return view('computersIndex');
+	}
+
+	public function create()
+	{
+		return view('computersCreate');
 	}
 }

@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="http://<?= $_SERVER['SERVER_NAME'] ?>/public/css/bootstrap.min.css" rel="stylesheet">
-    <title><?= $title?></title>
+    <title>System Support</title>
   </head>
   <body>
 	<div class="container-fluid">

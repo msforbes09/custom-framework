@@ -10,7 +10,7 @@
                 <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/computer">Computer</a>
+                <a class="nav-link" href="/computers">Computer</a>
             </li>
         </ul>
     </div>
