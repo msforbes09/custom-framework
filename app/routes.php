@@ -1,3 +1,4 @@
 <?php
 
-$routes->get('', PagesController@home);
+$router->get('', 'PagesController@home');
+$router->get('', 'ComputersController@index');
