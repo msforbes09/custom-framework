@@ -10,6 +10,7 @@
     <title>System Support</title>
   </head>
   <body>
-	<div class="container-fluid">
+    
+  <?php require 'navbar.php' ?>
 
-  	<?php require 'navbar.php' ?>
+	<div class="container-fluid">
