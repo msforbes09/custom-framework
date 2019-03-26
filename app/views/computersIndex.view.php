@@ -7,10 +7,10 @@
 			    <table class="table mt-2 border-bottom">
 			    	<thead>
 			    		<tr class="text-center">
-			    			<th>CompName</th>
-			    			<th>AdminPass</th>
 			    			<th>UserName</th>
 			    			<th>UserPass</th>
+			    			<th>CompName</th>
+			    			<th>AdminPass</th>
 			    			<th>WillsBuster</th>
 			    			<th>SkySea</th>
 			    		</tr>
@@ -18,10 +18,10 @@
 			    	<tbody>
 				    	<?php foreach ($computers as $computer) :?>
 				    		<tr class="text-center">
-					    		<td><?= $computer->computerName ?></td>
-					    		<td><?= $computer->adminPass ?></td>
 					    		<td><?= $computer->userName ?></td>
 					    		<td><?= $computer->userPass ?></td>
+					    		<td><?= $computer->computerName ?></td>
+					    		<td><?= $computer->adminPass ?></td>
 					    		<td><?= $computer->withWbuster ? '&#9989;' : '' ?></td>
 					    		<td><?= $computer->withSkySea ? '&#9989;' : '' ?></td>
 				    		</tr>

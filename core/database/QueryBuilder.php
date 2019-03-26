@@ -11,9 +11,11 @@ class QueryBuilder
 	{
 		$this->pdo = $pdo;
 	}
-	public function selectAll($table)
+	public function selectAll($table, $condition = "")
 	{
-		$stmt = $this->pdo->prepare("select * from {$table};");
+		$stmt = $this->pdo->prepare(
+			"select * from {$table} {$condition};"
+		);
 		$stmt->execute();
 		return $stmt->fetchAll(PDO::FETCH_CLASS);
 	}

@@ -8,7 +8,7 @@ class ComputersController
 {
 	public function index()
 	{
-		$computers = App::get('database')->selectAll('computers');
+		$computers = App::get('database')->selectAll('computers', 'order by userName');
 
 		return view('computersIndex', compact('computers'));
 	}

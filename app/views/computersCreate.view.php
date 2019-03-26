@@ -9,12 +9,16 @@
 			    	<div class="card-body">
 					    
 					    <h2 class="card-title">New Computer Record</h2>
+					    
+					    @foreach ($errors->all() as $error)
+						    <p class="alert alert-danger">{{ $error }}</p>
+						@endforeach
 			    		
 			    		<form method="post" action="/computers/create">
 
 			    			<fieldset class="form-group">
-			    				<label for="computerName">Comp Name</label>
-			    				<input type="text" class="form-control" id="computerName" name="computerName" placeholder="Computer Name" required>
+			    				<label for="compName">Comp Name</label>
+			    				<input type="text" class="form-control" id="compName" name="compName" placeholder="Computer Name" required>
 			    			</fieldset>
 
 			    			<fieldset class="form-group">

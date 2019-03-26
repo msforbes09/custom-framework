@@ -51,6 +51,6 @@ class Router
 			throw new Exception("{$action} not found in {$controllerName}.");
 		}
 
-		return $controller->$action	();
+		return $controller->$action();
 	}
 }
